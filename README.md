@@ -1,106 +1,55 @@
 # Raspberry Pi-Based In-Vehicle Rearview Camera System
 
-This project is a Raspberry Pi-based in-vehicle imaging system designed to automatically switch the navigation display to the rearview camera feed when the vehicle is put into reverse gear.
+A Raspberry Pi-based in-vehicle imaging system that switches the display to a rear-camera feed when reverse gear is selected, while keeping navigation visible during normal driving.
 
-The system provides a seamless user experience by prioritizing the camera feed during reversing maneuvers while maintaining normal navigation functionality during regular driving, enhancing both safety and usability.
+## How it works
 
-## Project Overview
+The Raspberry Pi and compatible camera module provide live video capture. The display changes between two modes:
 
-An in-vehicle rearview camera system was developed for this project. The system uses a Raspberry Pi as the main processing unit, paired with a Raspberry Pi-compatible camera module for live video capture. The display content dynamically switches based on the reverse gear signal.
+- **Navigation mode:** the navigation interface is shown during normal driving.
+- **Rearview mode:** the rear-camera feed is shown when reverse gear is detected.
 
-Under normal driving conditions, the navigation screen remains active. When the vehicle is shifted into reverse, the system automatically displays the rearview camera feed, allowing the driver to monitor the area behind the vehicle without manual intervention.
+The automatic switch is intended to avoid manual screen changes while reversing.
 
-## Project Objectives
+## System components
 
-The primary objectives of this project include:
+- Raspberry Pi
+- Raspberry Pi-compatible camera module
+- In-vehicle display and visualization system
+- Reverse-gear detection mechanism
+- Display-control software
+- Power and integration hardware
 
-- Developing a Raspberry Pi-based embedded system  
-- Integrating a camera module for live video capture  
-- Implementing an in-vehicle display system with dynamic content switching  
-- Creating automatic mode transitions based on operational context  
-- Gaining hands-on experience in hardware-software integration for real-world applications  
+## Work performed
 
-## System Operation
+- Developed the Raspberry Pi-based system architecture.
+- Integrated the camera module and established live video capture.
+- Designed the transition logic between navigation and camera views.
+- Implemented automatic display switching triggered by reverse gear.
+- Planned an in-vehicle testing setup.
 
-The system operates in two main modes:
+## Technologies and engineering focus
 
-### Navigation Mode
-During normal driving, the navigation interface is displayed on the screen.
+The project uses a Raspberry Pi, embedded Linux, camera capture, display/interface control and vehicle integration. It provides experience with embedded systems, real-time video display, context-aware interface switching, hardware-software integration and automotive system design.
 
-### Rearview Mode
-When the vehicle is put into reverse, the system detects the corresponding signal and switches the display to show the live rear camera feed.
+## Potential applications
 
-This automation eliminates the need for manual screen switching, providing a user-friendly and scenario-appropriate display.
+- In-vehicle rearview camera systems
+- Smart vehicle displays
+- Video-based driving-assistance systems
+- Raspberry Pi automotive prototypes
 
-## System Components
+## Future development
 
-Key components of the system include:
+- Improve night-vision performance and display-switching speed.
+- Add parking guide lines or video recording.
+- Develop a more compact enclosure or wireless-camera option.
+- Extend the in-vehicle multimedia interface.
 
-- Raspberry Pi  
-- Raspberry Pi-compatible camera module  
-- In-vehicle display / visualization system  
-- Reverse gear detection mechanism  
-- Display control software  
-- Power and integration hardware  
+## Project images
 
-## Implemented Tasks
+Project images are not currently included in this repository.
 
-- Developed the Raspberry Pi-based system architecture  
-- Integrated the compatible camera module  
-- Established live video capture functionality  
-- Designed the transition logic between navigation and camera views  
-- Implemented automatic display switching triggered by reverse gear  
-- Planned testing setup for in-vehicle scenarios  
+## Summary
 
-## Technologies and Tools
-
-- Raspberry Pi  
-- Raspberry Pi Camera Module  
-- Embedded Linux environment  
-- Display and interface control logic  
-- Vehicle integration and connectivity setup  
-
-## Technical Achievements
-
-The project provided practical experience in:
-
-- Embedded system development with camera integration  
-- Real-time video capture and display  
-- Context-aware user interface switching  
-- Hardware-software integration  
-- Automotive system design considerations  
-
-## Application Areas
-
-This system can be adapted for:
-
-- In-vehicle rearview camera systems  
-- Smart vehicle display solutions  
-- Video-based driving assistance systems  
-- Raspberry Pi-based automotive prototypes  
-
-## Project Images
-
-![System Overview](images/sistem-gorunumu.png)
-
-![Camera Module](images/kamera-modulu.png)
-
-![Screen Interface](images/ekran-arayuzu.png)
-
-![Rearview Mode](images/geri-gorus-modu.png)
-
-## Future Development Potential
-
-Potential improvements for the project include:
-
-- Enhancing night vision performance  
-- Faster display switching mechanisms  
-- Adding parking guide lines  
-- More compact enclosure design  
-- Video recording capability  
-- Wireless camera integration  
-- Advanced in-vehicle multimedia interface  
-
-## Conclusion
-
-This project demonstrates a functional Raspberry Pi-based in-vehicle imaging system. Its ability to automatically switch between navigation and rearview camera modes elevates it beyond basic camera integration, providing a practical solution for real-world driving scenarios. The project highlights strong hardware-software integration, user-focused design, and automotive-oriented engineering thinking.
+The project demonstrates a Raspberry Pi-based in-vehicle imaging system with automatic switching between navigation and rearview-camera modes.
